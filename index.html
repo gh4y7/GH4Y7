@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Kiosque - L'Univers de la Presse</title>
+    <style>
+        /* Styles de base */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif; /* Police style journal */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #2c2c2c;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 4px solid #b30000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-style: italic;
+            color: #cccccc;
+        }
+
+        /* Menu de navigation */
+        nav {
+            background-color: #333333;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: #b30000;
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Section d'introduction */
+        .intro {
+            text-align: center;
+            border-bottom: 2px solid #dddddd;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: #1a1a1a;
+        }
+
+        /* Grille des articles/catégories */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-top: 3px solid #1a1a1a;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #b30000;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555555;
+        }
+
+        .lire-plus {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .lire-plus:hover {
+            color: #b30000;
+            border-bottom-color: #b30000;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Le Kiosque</h1>
+        <p>Toute l'actualité sur la presse écrite et numérique</p>
+    </header>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Presse Quotidienne</a>
+        <a href="#">Magazines</a>
+        <a href="#">Histoire de la Presse</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>L'Édito du Jour</h2>
+            <p>Bienvenue sur <strong>Le Kiosque</strong>, votre portail dédié au monde fascinant du journalisme. De l'odeur de l'encre fraîche des éditions papier aux unes numériques en temps réel, plongez au cœur de l'information. Découvrez comment les journalistes façonnent notre compréhension du monde chaque matin.</p>
+        </section>
+
+        <section class="categories">
+            
+            <article class="card">
+                <h3>Presse Quotidienne Régionale (PQR)</h3>
+                <p>Découvrez l'importance des journaux locaux qui tissent le lien social et informent les citoyens sur l'actualité de leurs régions, villes et villages.</p>
+                <a href="#" class="lire-plus">En savoir plus &rarr;</a>
+            </article>
+
+            <article class="card">
+                <h3>Les Grands Quotidiens Nationaux</h3>
+                <p>Une analyse des tirages majeurs qui dictent les débats politiques, économiques et culturels à l'échelle d'un pays tout entier.</p>
+                <a href="#" class="lire-plus">En savoir plus &rarr;</a>
+            </article>
+
+            <article class="card">
+                <h3>La Transition Numérique</h3>
+                <p>Comment les journaux traditionnels s'adaptent-ils à l'ère d'Internet ? Explorez l'évolution des abonnements en ligne et du journalisme web.</p>
+                <a href="#" class="lire-plus">En savoir plus &rarr;</a>
+            </article>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Le Kiosque - Site dédié à l'univers des journaux. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
